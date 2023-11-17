@@ -1,0 +1,63 @@
+.main {
+    height: 600px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 70px;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 48px 0px;
+    background: var(--white-bg);
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
+}
+
+.user-profile img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: auto;
+}
+
+.user-profile h1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.balance-button {
+    margin-top: 24px;
+    background: var(--green-btn);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
+} 
+
+.nav-opt {
+    margin-top: 40px;
+}
+
+.nav-opt ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logout-button {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    margin-top: 90px;
+    padding: 8px 16px;
+    background: var(--red-btn);
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
+}

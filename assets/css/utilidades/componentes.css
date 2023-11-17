@@ -1,0 +1,18 @@
+.container {
+    margin: auto;
+    max-width: 1200px;
+    background: var(--green-bg);
+    border-radius: 48px 0px;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
+}
+
+#diviser {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background: var(--black-color);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 8px;
+}
