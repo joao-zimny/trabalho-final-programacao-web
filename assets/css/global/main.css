@@ -61,3 +61,38 @@
     border: 1px solid #000;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
 }
+
+.main-content  {
+    box-sizing: border-box;
+    height: 440px;
+    width: 700px;
+    background: var(--white-bg);
+}
+
+.title {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 36px;
+    width: 48px;
+    height: 2px;
+    background: var(--black-color);
+}
+
+.lista-acoes {
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.lista-acoes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0px;
+}
