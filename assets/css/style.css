@@ -11,3 +11,9 @@
 @import "/assets/css/global/main.css";
 @import "/assets/css/global/footer.css";
 @import "/assets/css/global/header.css";
+
+/* PIX */
+@import "/assets/css/pix/pix.css";
+@import "/assets/css/pix/cadastrar.css";
+@import "/assets/css/pix/remover.css";
+@import "/assets/css/pix/enviar.css";
