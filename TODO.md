@@ -10,5 +10,4 @@
     - Adicionar/remover chave
     - Listar chaves favoritas    
 
-
 -- Adicionar ::after e hover nos links ativos da barra de navegação

@@ -41,16 +41,17 @@
 
         <!-- lado direito -->
         <div class="main-content container">
-            <h1 class="title font-5">pix</h1>
+            <h1 class="title font-5">conta</h1>
 
-            <div class="lista-acoes font-6">
-                <ul>
-                    <li><a href="/conta/depositar.html">depositar</a></li>
-                    <li><a href="/conta/sacar.html">sacar</a></li>
-                </ul>
+            <div class="conta font-6">
+                <form action="/php/sacar.php" method="post" class="form-enviar-conta font-3">
+                        <label for="valor">valor do depósito:</label>
+                        <input type="text" placeholder="R$" name="valor" id="valor">
+                    <button type="submit" onclick="return validarValorDigitado()" id="btn">confirmar</button>
+                </form>
             </div>
         </div>
-    
+
     </main>
 
     <footer class="footer container font-1">

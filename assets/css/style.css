@@ -17,3 +17,7 @@
 @import "/assets/css/pix/cadastrar.css";
 @import "/assets/css/pix/remover.css";
 @import "/assets/css/pix/enviar.css";
+
+/* Conta */
+@import "/assets/css/conta/depositar.css";
+@import "/assets/css/conta/sacar.css";

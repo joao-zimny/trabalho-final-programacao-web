@@ -12,4 +12,42 @@ select.addEventListener('change', () => {
         input.placeholder = "(00) 99999-9999";
     }
 });
-///////////////////////////////////////
+
+// Validações
+function validarValorDigitado() {
+    const value = document.getElementById("valor").value;
+    if (value === "") {
+        alert("Digite algum valor!");
+        return false;
+    }
+    if (+value <= 0) {
+        alert("Digite um valor maior do que R$0!");
+        return false;
+    }
+    return true;
+}
+
+function validarPix() {
+    const tipoChave = document.getElementById("tipo-chave").value;
+    const chaveDigitada = document.getElementById("tipo-chave-input").value;
+    if (tipoChave === "" || chaveDigitada === "") {
+        alert("Digite uma chave!");
+        return false;
+    }
+    
+    if (validarValorDigitado() == true) {
+        return true;
+    } else {
+        return false;
+    }
+    // const value = document.getElementById("valor").value;
+    // if (value === "") {
+    //     alert("Digite algum valor!");
+    //     return false;
+    // }
+    // if (+value <= 0) {
+    //     alert("Digite um valor maior do que R$0!");
+    //     return false;
+    // }
+    // return true;
+}

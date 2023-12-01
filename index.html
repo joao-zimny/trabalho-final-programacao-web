@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Banco WEB</title>
 </head>
+
 <body>
     <header class="header container font-1">
         <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="creditos.html">créditos</a>
+            <a href="/index.html">Home</a>
+            <a href="/creditos.html">créditos</a>
         </nav>
     </header>
     <main class="main container">
@@ -22,15 +24,17 @@
             <div id="diviser"></div>
 
             <div class="balance-button">
-                <span class="font-4">Saldo: R$ 1.735,80</span>
+                <span class="font-4">Saldo: R$
+                    <?php echo "R$ " . number_format($saldo, 2, ',', '.'); ?>
+                </span>
             </div>
 
             <div class="nav-opt font-2">
-                    <ul>
-                        <li><a href="/conta.html">conta</a></li>
-                        <li><a href="/movimentacoes.html">movimentações</a></li>
-                        <li><a href="/pix.html">pix</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="/conta.html">conta</a></li>
+                    <li><a href="/movimentacoes.html">movimentações</a></li>
+                    <li><a href="/pix.html">pix</a></li>
+                </ul>
             </div>
 
             <div class="logout-button">
@@ -39,8 +43,8 @@
         </div>
 
         <div class="main-content">
-
-        </div>  
+            <h1 class="font-1">Bem vindo!</h1>
+        </div>
     </main>
 
     <footer class="footer container font-1">
@@ -48,4 +52,5 @@
     </footer>
     <script src="/assets/script/script.js"></script>
 </body>
+
 </html>
