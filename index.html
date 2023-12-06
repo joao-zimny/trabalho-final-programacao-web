@@ -25,7 +25,9 @@
 
             <div class="balance-button">
                 <span class="font-4">Saldo: R$
-                    <?php echo "R$ " . number_format($saldo, 2, ',', '.'); ?>
+                    <?php
+                    echo "R$ " . number_format($saldo, 2, ',', '.'); 
+                    ?>
                 </span>
             </div>
 
@@ -50,7 +52,11 @@
     <footer class="footer container font-1">
         <p>Todos os direitos reservados ©</p>
     </footer>
-    <script src="/assets/script/script.js"></script>
+    <script>
+        const dom = document.querySelector('body');
+        console.log(dom);
+    </script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>

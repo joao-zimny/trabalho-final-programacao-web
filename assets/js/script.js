@@ -1,17 +1,20 @@
 // Alterando placeholder da chave PIX
-const select = document.getElementById("tipo-chave");
-const input = document.getElementById("tipo-chave-input");
+if (document.location.href === 'http://localhost/pix/enviar.html' || document.location.href === 'http://localhost/pix/cadastrar.html') {
+    alert("Deu certo!");
+    const select = document.getElementById("tipo-chave");
+    const input = document.getElementById("tipo-chave-input");
 
-input.placeholder = "000.000.000-00";
+    input.placeholder = "000.000.000-00";
 
-select.addEventListener('change', () => {
-    if (select.value === 'cpf') {
-        input.placeholder = "000.000.000-00";
-    }
-    if (select.value === 'telefone') {
-        input.placeholder = "(00) 99999-9999";
-    }
-});
+    select.addEventListener('change', () => {
+        if (select.value === 'cpf') {
+            input.placeholder = "000.000.000-00";
+        }
+        if (select.value === 'telefone') {
+            input.placeholder = "(00) 99999-9999";
+        }
+    });
+}
 
 // Validações
 function validarValorDigitado() {
@@ -34,7 +37,7 @@ function validarPix() {
         alert("Digite uma chave!");
         return false;
     }
-    
+
     if (validarValorDigitado() == true) {
         return true;
     } else {

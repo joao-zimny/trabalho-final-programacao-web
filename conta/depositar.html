@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Banco WEB</title>
 </head>
+
 <body>
     <header class="header container font-1">
         <nav class="nav-menu">
             <a href="/index.html">Home</a>
             <a href="/creditos.html">créditos</a>
         </nav>
-    </header>   
+    </header>
     <main class="main container">
         <!-- lado esquerdo -->
         <div class="user-profile">
@@ -44,9 +46,9 @@
             <h1 class="title font-5">conta</h1>
 
             <div class="conta font-6">
-                <form action="/php/sacar.php" method="post" class="form-enviar-conta font-3">
-                        <label for="valor">valor do depósito:</label>
-                        <input type="text" placeholder="R$" name="valor" id="valor">
+                <form action="/php/depositar.php" method="post" class="form-enviar-conta font-3">
+                    <label for="valor">valor do depósito:</label>
+                    <input type="text" placeholder="R$" name="valor" id="valor">
                     <button type="submit" onclick="return validarValorDigitado()" id="btn">confirmar</button>
                 </form>
             </div>
@@ -59,4 +61,5 @@
     </footer>
     <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
