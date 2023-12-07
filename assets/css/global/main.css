@@ -101,3 +101,14 @@
     flex-direction: column;
     gap: 12px 0px;
 }
+
+/* #index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.titulo-principal {
+    display: block;
+    text-align: center;
+}

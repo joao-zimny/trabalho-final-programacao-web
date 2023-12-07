@@ -21,3 +21,6 @@
 /* Conta */
 @import "/assets/css/conta/depositar.css";
 @import "/assets/css/conta/sacar.css";
+
+/* Extrato */ 
+@import "/assets/css/extrato/extrato.css";

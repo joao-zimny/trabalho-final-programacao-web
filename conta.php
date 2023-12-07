@@ -1,3 +1,23 @@
+<?php
+$serverName = "localhost";
+$database = "trabalho-final";
+$userName = "root";
+$password = "";
+$conn= mysqli_connect($serverName,$userName, $password, $database);
+
+if (!$conn) {
+    die("Erro na conexão do DB " . mysqli_connect_error());
+    echo "ERRO!";
+}
+
+$sql = "select saldo from conta where idConta = 1";  
+$result = $conn->query($sql);
+if (!$result) {
+    die("Erro na consulta: " . $conn->error); 
+}
+$row = $result->fetch_assoc();
+$saldo = $row['saldo'];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,10 +29,10 @@
 <body>
     <header class="header container font-1">
         <nav class="nav-menu">
-            <a href="/index.html">Home</a>
-            <a href="/creditos.html">créditos</a>
+            <a href="/index.php">Home</a>
+            <a href="/creditos.php">créditos</a>
         </nav>
-    </header>   
+    </header>
     <main class="main container">
         <!-- lado esquerdo -->
         <div class="user-profile">
@@ -23,14 +43,16 @@
             <div id="diviser"></div>
 
             <div class="balance-button">
-                <span class="font-4">Saldo: R$ 1.735,80</span>
+            <span class="font-4">Saldo: R$
+                    <?php echo $saldo; ?>
+            </span>
             </div>
 
             <div class="nav-opt font-2">
                 <ul>
-                    <li><a href="/conta.html">conta</a></li>
-                    <li><a href="/movimentacoes.html">movimentações</a></li>
-                    <li><a href="/pix.html">pix</a></li>
+                    <li><a href="/conta.php">conta</a></li>
+                    <li><a href="/movimentacoes.php">movimentações</a></li>
+                    <li><a href="/pix.php">pix</a></li>
                 </ul>
             </div>
 
@@ -41,16 +63,16 @@
 
         <!-- lado direito -->
         <div class="main-content container">
-            <h1 class="title font-5">conta</h1>
+            <h1 class="title font-5">pix</h1>
 
-            <div class="conta font-6">
-                <form action="/php/sacar.php" method="post" class="form-enviar-conta font-3">
-                        <label for="valor">valor do saque:</label>
-                        <input type="text" placeholder="R$" name="valor" id="valor">
-                    <button type="submit" onclick="return validarValorDigitado()" id="btn">confirmar</button>
-                </form>
+            <div class="lista-acoes font-6">
+                <ul>
+                    <li><a href="/conta/depositar.php">depositar</a></li>
+                    <li><a href="/conta/sacar.php">sacar</a></li>
+                </ul>
             </div>
         </div>
+    
     </main>
 
     <footer class="footer container font-1">

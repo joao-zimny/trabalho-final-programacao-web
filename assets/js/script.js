@@ -1,6 +1,5 @@
 // Alterando placeholder da chave PIX
-if (document.location.href === 'http://localhost/pix/enviar.html' || document.location.href === 'http://localhost/pix/cadastrar.html') {
-    alert("Deu certo!");
+if (document.location.href === 'http://localhost/pix/enviar.php' || document.location.href === 'http://localhost/pix/cadastrar.php') {
     const select = document.getElementById("tipo-chave");
     const input = document.getElementById("tipo-chave-input");
 
@@ -43,14 +42,4 @@ function validarPix() {
     } else {
         return false;
     }
-    // const value = document.getElementById("valor").value;
-    // if (value === "") {
-    //     alert("Digite algum valor!");
-    //     return false;
-    // }
-    // if (+value <= 0) {
-    //     alert("Digite um valor maior do que R$0!");
-    //     return false;
-    // }
-    // return true;
 }

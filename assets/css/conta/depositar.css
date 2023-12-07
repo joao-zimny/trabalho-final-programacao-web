@@ -66,4 +66,36 @@
     background: #433bd1;
 }
 
-/* Lista de Chaves */
+/* Extrato */
+
+.extrato-container {
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.20);
+    overflow-y: scroll;
+}
+
+.extrato-table {
+    overflow-y: scroll;
+    padding: 0px 24px;
+}
+
+.extrato-table th {
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.extrato-table tbody td {
+    padding: 8px 0px;
+}
+
+.extrato-table tbody tr {
+    display: relative;
+}
+
+.extrato-table tbody tr::after {
+    display: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
